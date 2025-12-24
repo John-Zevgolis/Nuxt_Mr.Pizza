@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  ssr: true,
   modules: [
     '@nuxt/fonts',
     '@nuxtjs/tailwindcss',
@@ -10,6 +9,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'nuxt-swiper',
     '@vueuse/motion/nuxt',
+    '@vueuse/nuxt',
   ],
   runtimeConfig: {
     cosmicBucketSlug: process.env.BUCKET_SLUG,

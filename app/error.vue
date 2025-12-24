@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import type { GeneralSettings } from '~/types';
-
 const props = defineProps({
   error: Object,
 });
-
-const settings = useState<GeneralSettings | null>('app-settings');
 
 definePageMeta({
   layout: false,
@@ -29,14 +25,12 @@ const handleClearError = () => {
   <main class="min-h-screen flex justify-center items-center px-3 bg-white">
     <div class="py-12 text-center">
       <NuxtImg
-        v-if="settings?.logo"
-        :src="settings.logo.url"
+        src="https://imgix.cosmicjs.com/5be36d50-4ef8-11ec-846a-25be80f1a4eb-logo.png"
         width="164"
         height="195"
-        :alt="settings.logo.alt"
+        alt="Logo"
         class="mx-auto"
       />
-
       <h1
         class="font-bold text-center mb-2 text-7xl sm:text-8xl xl:text-9xl text-[#97211a]"
       >

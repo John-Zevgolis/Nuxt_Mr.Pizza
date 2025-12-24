@@ -79,13 +79,15 @@
       </div>
     </nav>
   </header>
-  <Sidebar
-    @close="closeMobileMenu"
-    v-if="menu && settings"
-    :menu="menu"
-    :socials="socials"
-    :active="showMobileMenu"
-  />
+  <ClientOnly>
+    <Sidebar
+      @close="closeMobileMenu"
+      v-show="menu && settings"
+      :menu="menu || []"
+      :socials="socials"
+      :active="showMobileMenu"
+    />
+  </ClientOnly>
 </template>
 
 <script setup lang="ts">
@@ -106,19 +108,12 @@ const closeMobileMenu = () => (showMobileMenu.value = false);
 
 provide('close', closeMobileMenu);
 
-const handleResize = () => {
-  if (import.meta.client && window.innerWidth > 1024)
+const { width } = useWindowSize();
+
+watch(width, (newWidth) => {
+  if (newWidth >= 1024) {
     showMobileMenu.value = false;
-};
-
-onMounted(() => {
-  handleResize();
-
-  window.addEventListener('resize', handleResize);
-});
-
-onUnmounted(() => {
-  if (import.meta.client) window.removeEventListener('resize', handleResize);
+  }
 });
 </script>
 
