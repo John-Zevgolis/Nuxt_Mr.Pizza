@@ -1,75 +1,166 @@
-# Nuxt Minimal Starter
+# 🍕 Mr. Pizza
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern pizza showcase platform built with Nuxt 4, delivering exceptional performance, seamless navigation, and a delightful user experience.
 
-## Setup
+![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?style=for-the-badge\&logo=nuxtdotjs)
+![Vue](https://img.shields.io/badge/Vue-3-42B883?style=for-the-badge\&logo=vuedotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge\&logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge\&logo=tailwindcss)
 
-Make sure to install dependencies:
+---
+
+# 🍽️ Overview
+
+Mr. Pizza is a modern restaurant website built with Nuxt 4 and powered by Cosmic CMS. The platform allows visitors to explore the menu, discover featured pizzas, and enjoy a fast and responsive browsing experience.
+
+Designed with performance, scalability, and maintainability in mind, the project leverages the latest Vue ecosystem technologies and a headless CMS architecture.
+
+---
+
+# ✨ Features
+
+* 🍕 Dynamic Pizza Menu powered by Cosmic CMS
+* 📄 CMS-managed Content & Promotions
+* 🖼️ Optimized Images & Media
+* ⚡ Lightning-Fast Performance with Nuxt 4
+* 🚀 Server-Side Rendering (SSR)
+* 📱 Fully Responsive Design
+* 🎨 Modern UI & Smooth User Experience
+* 🔍 SEO-Friendly Architecture
+* 🔄 Real-Time Content Updates via Cosmic Dashboard
+
+---
+
+# 🚀 Tech Stack
+
+| Technology            | Purpose                            |
+| --------------------- | ---------------------------------- |
+| Nuxt 4                | Full-Stack Vue Framework           |
+| Vue 3                 | Progressive JavaScript Framework   |
+| TypeScript            | Type Safety & Developer Experience |
+| Tailwind CSS          | Utility-First Styling Framework    |
+| Cosmic CMS            | Headless Content Management        |
+| Cosmic JavaScript SDK | Content API Integration            |
+| Nitro                 | Server Engine & API Layer          |
+| Vercel                | Hosting & Deployment               |
+
+---
+
+# 📁 Project Structure
 
 ```bash
-# npm
+Nuxt4_Mr.Pizza/
+│
+├── assets/
+├── components/
+├── composables/
+├── layouts/
+├── pages/
+├── public/
+├── server/
+├── types/
+├── utils/
+│
+├── app.vue
+├── nuxt.config.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/John-Zevgolis/Nuxt4_Mr.Pizza.git
+```
+
+Move to the project folder:
+
+```bash
+cd Nuxt4_Mr.Pizza
+```
+
+Install dependencies:
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run development server:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
+Application will be available at:
 
 ```bash
-# npm
+http://localhost:3000
+```
+
+---
+
+# 🔧 Environment Variables
+
+Create a `.env` file in the root directory.
+
+Example:
+
+```env
+COSMIC_BUCKET_SLUG=
+COSMIC_READ_KEY=
+```
+
+---
+
+# 📦 Production Build
+
+Build the application:
+
+```bash
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
-Locally preview production build:
+Preview production build:
 
 ```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+---
+
+# 🌍 Deployment
+
+The project can be deployed on:
+
+* Vercel
+* Netlify
+* Railway
+* VPS
+* Docker
+
+---
+
+# 👨‍💻 Author
+
+**John Zevgolis**
+
+GitHub: https://github.com/John-Zevgolis
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+### 🍕 Built with Nuxt 4, powered by Cosmic CMS.
+
+</div>
